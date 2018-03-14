@@ -1,9 +1,10 @@
 <?php
+if(!isset($_COOKIE["font name"])) {
 $old_font_name = $_COOKIE["font name"]
 $old_font_size = $_COOKIE["font size"]
+}
 setcookie("font name",  $_POST["font name"], time() + (86400 * 30), "/"); // 86400 = 1 day
 setcookie("font size",  $_POST["font size"], time() + (86400 * 30), "/"); // 86400 = 1 day
-
 ?>
 <html>
 <body>
