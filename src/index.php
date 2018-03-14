@@ -1,5 +1,5 @@
 <?php
-if(!isset($_COOKIE["font name"])) {
+if(isset($_COOKIE["font name"])) {
 $old_font_name = $_COOKIE["font name"]
 $old_font_size = $_COOKIE["font size"]
 }
